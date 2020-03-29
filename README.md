@@ -7,6 +7,9 @@ redis-mount lets you use Redis as a filesystem.
 [![pre-release](http://img.shields.io/badge/pre--release-20140829-yellow.svg?style=flat)](https://github.com/poying/redis-mount/releases/tag/20140829)
 
 ```bash
+# start a redis instance
+docker run --name fuse_redis -p 6379:6379 -d redis
+
 redis-mount 0.0.0
 $ redis-mount ~/redis
 

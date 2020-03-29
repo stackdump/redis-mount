@@ -26,6 +26,19 @@ func (f *redisFile) InnerFile() nodefs.File {
 	return nil
 }
 
+func (f *redisFile) GetLk(uint64, *fuse.FileLock, uint32, *fuse.FileLock) fuse.Status {
+	return fuse.OK
+}
+
+func (f *redisFile) SetLk(uint64, *fuse.FileLock, uint32) fuse.Status {
+	return fuse.OK
+}
+
+func (f *redisFile) SetLkw(uint64, *fuse.FileLock, uint32) fuse.Status {
+	return fuse.OK
+}
+
+
 func (f *redisFile) String() string {
 	return "redisFile"
 }

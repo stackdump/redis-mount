@@ -3,11 +3,11 @@ package main
 import "os"
 import "fmt"
 import "path/filepath"
-import "github.com/codegangsta/cli"
+import "github.com/urfave/cli"
 import "github.com/hanwen/go-fuse/fuse"
 import "github.com/hanwen/go-fuse/fuse/pathfs"
 import "github.com/hanwen/go-fuse/fuse/nodefs"
-import "github.com/poying/redis-mount/redisfs"
+import "github.com/jlertle/redis-mount/redisfs"
 
 var App *cli.App
 
